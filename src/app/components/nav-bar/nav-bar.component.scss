@@ -1,0 +1,65 @@
+nav{
+    height: 55px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #24252c;
+    padding-left: 5vw;
+}
+.container-nav{
+    display: flex;
+}
+.navbar-title{
+    color: #ffffff; 
+}
+.my-games{
+    color: #e0e0e0;
+}
+.navbar-buttons{
+    color: #b3b1a5;
+}
+nav .container-nav a{
+    text-decoration: none;
+}
+
+.navbar-title{
+    white-space: nowrap;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+nav .container-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+}
+
+form{
+    margin-right: 10vh;
+}
+form input, form button{
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #b3b1a5;
+}
+form input{
+    width: 35vw;
+    border-radius: 5px;
+    margin-right: 0.2vw;
+    color: #e0e0e0;
+    padding-left: 1vw;
+}
+form button{
+    cursor: pointer;
+    color: #b3b1a5;
+    border-radius: 5px;
+}
+.navbar-title:hover, .my-games:hover, .navbar-buttons:hover, form button:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
