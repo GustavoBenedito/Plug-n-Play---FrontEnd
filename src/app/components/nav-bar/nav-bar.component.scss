@@ -1,4 +1,4 @@
-nav{
+.navbar{
     height: 55px;
     align-items: center;
     text-align: center;
@@ -8,13 +8,10 @@ nav{
     background-color: #24252c;
     padding-left: 5vw;
 }
-.container-nav{
-    display: flex;
-}
 .navbar-title{
     color: #ffffff; 
 }
-.my-games{
+.my-profile{
     color: #e0e0e0;
 }
 .navbar-buttons{
