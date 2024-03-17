@@ -1,0 +1,58 @@
+main{
+    background-color: #1e192c;
+    height: 100vh;
+    color: #f5fcfe;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+.disseminate{
+    width: 30vw;
+}
+.login-section{
+    width: 30vw;
+}
+.choose-login-signup{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12vh;
+    button{
+        width: 80px;
+        background-color: transparent;
+        border: none;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-weight:500;
+        cursor: pointer;
+        height: 30px;
+        color: white
+    }
+    .active{
+        background-color: #7f29b4;
+    }
+}
+.form-title{
+    font-size: 22.5px;
+    font-weight: bold;
+}
+form input{
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    height: 35px;
+    width: 60%;
+    min-width: 200px;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    border-bottom: 1px solid #7f29b4;
+}
+@media screen and (max-width: 991px) {
+    .disseminate {
+        display: none;
+        background-color: red;
+    }
+}
