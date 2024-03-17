@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  selectedForm: string = 'login';
 
+  chooseLoginSignup(choosed:string){
+    this.selectedForm = choosed;
+  }
 }
