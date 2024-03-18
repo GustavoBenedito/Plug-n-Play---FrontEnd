@@ -2,12 +2,22 @@ main{
     background-color: #1e192c;
     height: 100vh;
     color: #f5fcfe;
+    padding-top: 5vh;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 5vh;
 }
 .disseminate{
     width: 30vw;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    .disseminate {
+        display: none;
+    }
+    .login-section {
+        height: 100%;
+    }
 }
 .login-section{
     width: 30vw;
@@ -18,7 +28,8 @@ main{
     align-items: center;
     height: 12vh;
     button{
-        width: 80px;
+        width: 100px;
+        min-width: 100px;
         background-color: transparent;
         border: none;
         border-radius: 8px;
@@ -33,26 +44,80 @@ main{
     }
 }
 .form-title{
-    font-size: 22.5px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 1.8rem;
     font-weight: bold;
 }
-form input{
-    background: transparent;
-    border: 0px;
-    outline: 0px;
-    color: rgb(255, 255, 255);
-    line-height: 2;
-    height: 35px;
-    width: 60%;
-    min-width: 200px;
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    border-bottom: 1px solid #7f29b4;
-}
-@media screen and (max-width: 991px) {
-    .disseminate {
-        display: none;
-        background-color: red;
+.login-form, .signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    form{
+        height: 30vh;
+        min-height: 330px;
+        width: 330px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        input{
+            margin-bottom: 20px;
+            background: transparent;
+            border: 0px;
+            outline: 0px;
+            color: white;
+            line-height: 2;
+            height: 35px;
+            width: 100%;
+            min-width: 250px;
+            max-width: 500px;
+            font-family: inherit;
+            font-size: 100%;
+            border-bottom: 1px solid #7f29b4;
+        }
+        .button-submit{
+            padding-top: 5vh;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            button{
+                width: 30px;
+                min-width: 80px;
+                height: 30px;
+                border-radius: 8px;
+                background: linear-gradient(270deg, rgb(50, 33, 78) -3.55%, rgb(135, 71, 175) 100.21%);
+                color: white;
+                border: none;
+                transition: 0.3s;
+                opacity: 0.5;
+                font-weight: bold;
+            }
+            button:hover{
+                opacity: 1;
+            }
+        }
     }
+    .forgot-password{
+        width: 100%;
+        min-width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            color: rgb(229, 224, 68);
+            cursor: pointer;
+            font-weight: 500;
+            border: none;
+            background-color: transparent;
+            transition: 0.3s;
+            opacity: 0.8;
+        }
+        button:hover{
+            opacity: 1;
+        }
+    }
+}
+.login-form form{
+    margin-bottom: -20px;
 }
