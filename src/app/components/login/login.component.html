@@ -1,0 +1,43 @@
+<main>
+    <section class="disseminate">
+        <h2>
+            The platform to register, analyze and research your next game in a fun and informative environment
+        </h2>
+    </section>
+    <section class="login-section">
+        <div class="choose-login-signup">
+            <button class="button-login" (click)="chooseLoginSignup('login')" [class.active]="selectedForm === 'login'">
+                Login
+            </button>
+            <button class="button-signup" (click)="chooseLoginSignup('signup')" [class.active]="selectedForm === 'signup'">
+                Sign up
+            </button>
+        </div>
+        <div class="login-form" *ngIf="selectedForm === 'login'">
+            <form action="">
+                <h4 class="form-title">Already registered?</h4>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="button-submit">
+                    <button type="submit">Sign in</button>
+                </div>
+            </form>
+            <div class="forgot-password">
+                <button >Forgot your password? No problem, click here</button>
+            </div>
+        </div>
+        <div class="signup-form" *ngIf="selectedForm === 'signup'">
+            <form action="">
+                <h4 class="form-title">Create your register</h4>
+                <input type="text" placeholder="*Your full name">
+                <input type="email" placeholder="*Your best email">
+                <input type="text" placeholder="*+55 (99) 99999-9999">
+                <input type="password" placeholder="*Type your password">
+                <input type="password" placeholder="*Type in your password again">
+                <div class="button-submit">
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
